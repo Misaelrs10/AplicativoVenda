@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="450dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"></LinearLayout>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/listViewVenda"
+                android:layout_gravity="center_vertical"
+                android:textFilterEnabled="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:gravity="center|right"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.99"
+                android:weightSum="1"
+                android:gravity="center_vertical|start" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Total de vendas:"
+                    android:id="@+id/textView36"
+                    android:textSize="12dp"
+                    android:layout_weight="0.20"
+                    android:gravity="left|center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp">
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="R$"
+                        android:id="@+id/textView37"
+                        android:layout_weight="0.02"
+                        android:textSize="14dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/totalTodasVendas"
+                        android:layout_weight="0.12"
+                        android:textSize="14dp"
+                        android:textColor="#000000"
+                        android:numeric="decimal"
+                        android:inputType="number" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:id="@+id/btnovoVenda"
+                android:gravity="center"
+                android:onClick="btnovaVenda"
+                android:nestedScrollingEnabled="true"
+                android:background="@drawable/adicionarvenda" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

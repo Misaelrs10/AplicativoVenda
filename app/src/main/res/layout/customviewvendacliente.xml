@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:clickable="false"
+        android:layout_weight="0.05">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@+id/produtoVenda"
+                android:layout_toEndOf="@+id/textView9"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Produto:"
+                    android:id="@+id/textView9"
+                    android:layout_below="@+id/nomeCliente"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/produtoVendaCliente"
+                    android:layout_width="193dp"
+                    android:layout_height="20dp"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:text="produto"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/textView9"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@+id/dataVenda"
+                android:layout_toEndOf="@+id/dataVenda"
+                android:gravity="center_vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Data:"
+                    android:layout_below="@+id/nomeCliente"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/dataVendaCliente"
+                    android:layout_width="81dp"
+                    android:layout_height="20dp"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:text="data"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/dataVenda"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_above="@+id/quantidadeVenda"
+                    android:layout_toEndOf="@+id/quantidadeVenda"
+                    android:gravity="center_vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Quantidade:"
+                        android:layout_below="@+id/nomeCliente"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/quantidadeVendaCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:text="quantidade"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/quantidadeVenda"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@+id/totalVenda"
+                android:layout_toEndOf="@+id/totalVenda"
+                android:gravity="center_vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Valor de Venda: R$"
+                    android:layout_below="@+id/nomeCliente"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/totalVendaCliente"
+                    android:layout_width="110dp"
+                    android:layout_height="20dp"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:text="valor de venda"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/totalVenda"
+                    android:gravity="left|center_vertical" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="fill_parent"
+                android:layout_height="26dip"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="id"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/textView20"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

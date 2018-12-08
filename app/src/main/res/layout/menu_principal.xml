@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="603dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/menuprincipal"
+            android:layout_weight="0.25">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.21">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"></LinearLayout>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/vendas"
+                android:onClick="btVenda"
+                android:textSize="16dp"
+                android:background="@drawable/vendas"
+                android:text="          VENDAS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/button7"
+                android:onClick="btRecebimento"
+                android:textSize="16dp"
+                android:background="@drawable/pagamentos"
+                android:text="          RECEBIMENTOS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/clientes"
+                android:onClick="btCliente"
+                android:textSize="16dp"
+                android:layout_weight="0.00"
+                android:background="@drawable/clientes"
+                android:textStyle="bold"
+                android:text="          CLIENTES"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/produtos"
+                android:onClick="btProduto"
+                android:textSize="16dp"
+                android:background="@drawable/produtos"
+                android:textColor="#FFFFFF"
+                android:text="          PRODUTOS"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/fornecedores"
+                android:onClick="btFornecedor"
+                android:layout_weight="0.00"
+                android:textSize="16dp"
+                android:background="@drawable/fornecedores"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="          FORNECEDORES" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/button10"
+                android:onClick="btVendedor"
+                android:textSize="16dp"
+                android:background="@drawable/vendedores"
+                android:text="          VENDEDORES"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="by Mis@el"
+                android:id="@+id/textView21"
+                android:layout_gravity="right"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

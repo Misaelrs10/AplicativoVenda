@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.29"
+        android:weightSum="1"
+        android:gravity="center_vertical|center|center_horizontal">
+
+        <TextView
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CADASTRO DE CLIENTE"
+            android:id="@+id/textView11"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#574971" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.50"
+        android:gravity="center"
+        android:longClickable="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Nome:"
+                android:id="@+id/textView12"
+                android:textColor="#574971"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></LinearLayout>
+
+            <EditText
+                android:windowSoftInputMode="adjustPan|adjustNothing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/idNomeCli"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:background="@drawable/edit" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Telefone:"
+                android:id="@+id/textView15"
+                android:textColor="#574971"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:windowSoftInputMode="adjustPan|adjustNothing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/idTelefone"
+                android:inputType="number|phone|text"
+                android:textSize="14dp"
+                android:background="@drawable/edit"
+                android:autoText="false"
+                android:phoneNumber="true"
+                android:hint="(__) ______ - _____"
+                android:gravity="bottom" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Endereço:"
+                android:id="@+id/textView14"
+                android:textColor="#574971"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:windowSoftInputMode="adjustPan|adjustNothing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/idEndereco"
+                android:textSize="14dp"
+                android:background="@drawable/edit" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="CPF:"
+                android:id="@+id/textView13"
+                android:textColor="#574971"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:windowSoftInputMode="adjustPan|adjustNothing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/idCpf"
+                android:layout_weight="0.96"
+                android:textSize="14dp"
+                android:background="@drawable/edit"
+                android:editable="true"
+                android:inputType="number"
+                android:gravity="bottom"
+                android:hint="___ . ___ . ___ - __" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|right"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:id="@+id/btcadastrar_cliente"
+            android:onClick="btcadastrar_cliente"
+            android:textSize="16dp"
+            android:background="@drawable/salvarcliente"
+            android:layout_weight="0.00" />
+
+    </LinearLayout>
+</LinearLayout>

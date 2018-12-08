@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_above="@+id/dataVenda"
+            android:layout_toEndOf="@+id/dataVenda"
+            android:gravity="center_vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Data:"
+                android:layout_below="@+id/nomeCliente"
+                android:layout_alignParentStart="true"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/dataRecebimento"
+                android:gravity="left|center_vertical"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_above="@+id/totalVenda"
+            android:layout_toEndOf="@+id/totalVenda"
+            android:gravity="center_vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Valor recebido: R$"
+                android:layout_below="@+id/nomeCliente"
+                android:layout_alignParentStart="true"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/valorRecebimento"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+    android:id="@+id/id"
+    android:layout_width="fill_parent"
+    android:layout_height="26dip"
+    android:ellipsize="marquee"
+    android:maxLines="1"
+    android:text="id"
+    android:textSize="15dp"
+    android:textColor="#000000"
+    android:layout_alignParentBottom="true"
+    android:layout_toEndOf="@+id/textView20"
+    android:visibility="gone" />
+</LinearLayout>

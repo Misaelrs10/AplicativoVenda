@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Controle de Vendas</string>
+    <string name="action_settings">Configurações</string>
+    <string name="editar"> Editar </string>
+    <string name="excluir"> Excluir </string>
+    <string name="opcoes"> Opcões </string>
+    <string name="delete"> Excluir </string>
+    <string name="edit"> Editar </string>
+    <string name="options"> Opcões </string>
+    <string name="sim"> Sim </string>
+    <string name="nao"> Não </string>
+    <string name="no">Não</string>
+    <string name="yes">Sim</string>
+    <string name="compras">Compras</string>
+    <string name="purchases">Compras</string>
+</resources>

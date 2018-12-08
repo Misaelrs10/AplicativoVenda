@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:gravity="center|right"
+            android:weightSum="1">
+
+            <SearchView
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/buscarVendedor"
+                android:onClick="buscarCliente"
+                android:queryHint="procurar vendedor"
+                android:layout_weight="0.97" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="400dp">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:id="@+id/listViewVendedor"
+                android:layout_gravity="center_vertical"
+                android:textFilterEnabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:gravity="center|right"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.99"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Total de"
+                    android:id="@+id/textView29"
+                    android:textSize="12dp"
+                    android:layout_weight="0.20"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="vendedores cadastrados:"
+                    android:id="@+id/textView38"
+                    android:textSize="12dp"
+                    android:layout_weight="0.20"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/totalVendedores"
+                    android:layout_weight="0.20"
+                    android:textSize="14dp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:id="@+id/btnovoVendedor"
+                android:gravity="center"
+                android:onClick="btnovoVendedor"
+                android:nestedScrollingEnabled="true"
+                android:background="@drawable/adicionarvendedor" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

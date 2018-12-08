@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:weightSum="1"
+        android:gravity="center_vertical|center|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CADASTRO DE RECEBIMENTO"
+            android:id="@+id/textView11"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#2c8e8d"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.50"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_weight="0.08">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Nome do Cliente:"
+                android:id="@+id/textView32"
+                android:gravity="left|center_vertical"
+                android:textSize="16dp"
+                android:textColor="#2c8e8d"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:id="@+id/clienteRecebimento"
+                android:spinnerMode="dropdown"
+                android:focusableInTouchMode="false"
+                android:transitionGroup="false"
+                android:gravity="left"
+                android:background="@drawable/spinnervenda" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Valor: "
+                android:id="@+id/textView17"
+                android:gravity="left|center_vertical"
+                android:textColor="#2c8e8d"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="R$ "
+                    android:id="@+id/textView8"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#2c8e8d"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <EditText
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:id="@+id/valor_recebimento"
+                    android:background="@drawable/edit"
+                    android:textSize="14dp"
+                    android:numeric="integer"
+                    android:gravity="left|bottom|center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Data:  "
+                android:id="@+id/textView18"
+                android:gravity="left|center_vertical"
+                android:textColor="#2c8e8d"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:id="@+id/data_recebimento"
+                android:inputType="date"
+                android:background="@drawable/edit"
+                android:textSize="14dp"
+                android:gravity="left|bottom|center"
+                android:hint="__ /__ /_____" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|right"
+        android:weightSum="1"
+        android:layout_weight="0.13">
+
+        <Button
+            android:layout_width="92dp"
+            android:layout_height="80dp"
+            android:id="@+id/btcadastrar_recebimento"
+            android:onClick="btcadastrar_recebimento"
+            android:textSize="14dp"
+            android:background="@drawable/salvarpagamento" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/idCliente"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

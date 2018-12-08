@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:layout_height="61dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/fornecedor"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="12dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.00"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/nomeFornecedor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:gravity="center_vertical"
+                    android:text="nome"
+                    android:textSize="15dp"
+                    android:layout_above="@+id/nomeFornecedor"
+                    android:textColor="#088267"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@+id/textView25"
+                android:layout_toEndOf="@+id/textView24"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Telefone:"
+                    android:id="@+id/textView24"
+                    android:layout_below="@+id/nomeCliente"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/telefoneFornecedor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:text="telefone"
+                    android:textSize="12dp"
+                    android:textColor="#000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/textView24"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="fill_parent"
+                android:layout_height="26dip"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="id"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/textView20"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="10dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"> Sales Control </string>
+    <string name="action_settings"> Settings </string>
+    <string name="edit"> Edit </string>
+    <string name="delete"> Delete </string>
+    <string name="options"> Options </string>
+    <string name="editar"> Edit </string>
+    <string name="excluir"> Delete </string>
+    <string name="opcoes"> Options </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="purchases">Purchases</string>
+    <string name="compras">Purchases</string>
+    <string name="search_hint" />
+    <string name="action_searchable_activity" />
+</resources>

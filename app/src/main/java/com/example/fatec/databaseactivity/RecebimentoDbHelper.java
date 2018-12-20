@@ -9,7 +9,7 @@ import com.example.fatec.databaseactivity.RecebimentoRegister.RecebimentoDb;
 import java.util.ArrayList;
 
 public class RecebimentoDbHelper extends SQLiteOpenHelper{
-  public static final int DATABASE_VERSION = 1;
+  public static final int DATABASE_VERSION = 2;
   public static final String DATABASE_NAMEREC = "Recebimento.db";
 
   private static final String CREATEREC = "create table " + RecebimentoDb.TABLE_NAME +" ( "
@@ -71,7 +71,7 @@ public class RecebimentoDbHelper extends SQLiteOpenHelper{
         double total=0.0;
         Cursor cursorsoma = db.rawQuery("SELECT SUM(" + RecebimentoDb.COLUMN_VALOR+ ") total FROM "
                 + RecebimentoRegister.RecebimentoDb.TABLE_NAME + " where " +
-                RecebimentoDb.COLUMN_ID + " = '" + cliente.toString() + "'", null);
+                RecebimentoDb.COLUMN_CLIENTE + " = '" + cliente.toString() + "'", null);
         if (cursorsoma.moveToFirst()) {
             total = cursorsoma.getDouble(0);
         }

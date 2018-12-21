@@ -11,7 +11,7 @@ import java.text.Format;
 import java.util.ArrayList;
 
 public class VendaDbHelper extends SQLiteOpenHelper{
-  public static final int DATABASE_VERSION = 2;
+  public static final int DATABASE_VERSION = 1;
   public static final String DATABASE_NAMEVEN = "Venda.db";
 
   private static final String CREATEVEN = "create table " + VendaDb.TABLE_NAME +" ( "

@@ -75,11 +75,11 @@ public class ViewVendaCliente extends Activity{
         listViewVendaCliente.setAdapter(ad);
 
         totalCompras = (TextView)findViewById(R.id.compras);
-        totalCompras.setText(String.valueOf(helper.somarVendas(cliente)/10));
+        totalCompras.setText(String.valueOf(helper.somarVendas(cliente)));
         totalCompras.addTextChangedListener(MaskMoney.monetarioExibir(totalCompras));
 
         totalPagar = (TextView)findViewById(R.id.pagar);
-        totalPagar.setText(String.valueOf(helper.aPagar(cliente)-recebimentoDbHelper.somarRecebimento(cliente)/10));
+        totalPagar.setText(String.valueOf(helper.aPagar(cliente)-recebimentoDbHelper.somarRecebimento(cliente)));
         totalPagar.addTextChangedListener(MaskMoney.monetarioExibir(totalPagar));
     }
 

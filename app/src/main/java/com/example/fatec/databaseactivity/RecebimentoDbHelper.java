@@ -9,7 +9,7 @@ import com.example.fatec.databaseactivity.RecebimentoRegister.RecebimentoDb;
 import java.util.ArrayList;
 
 public class RecebimentoDbHelper extends SQLiteOpenHelper{
-  public static final int DATABASE_VERSION = 2;
+  public static final int DATABASE_VERSION = 1;
   public static final String DATABASE_NAMEREC = "Recebimento.db";
 
   private static final String CREATEREC = "create table " + RecebimentoDb.TABLE_NAME +" ( "

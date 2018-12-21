@@ -30,7 +30,7 @@ public class ViewRecebimento extends Activity{
         helper = new RecebimentoDbHelper(getApplicationContext());
         spinnerCliente = (Spinner) findViewById(R.id.spinnerCliente);
         totalRecebido = (TextView) findViewById(R.id.recebido);
-        //totalRecebido.addTextChangedListener(MaskMoney.monetario(totalRecebido));
+        totalRecebido.addTextChangedListener(MaskMoney.monetarioExibir(totalRecebido));
         loadSpinnerCliente();
 
     }
@@ -68,8 +68,8 @@ public class ViewRecebimento extends Activity{
         listViewRecebimento.setAdapter(ad);
 
         totalRecebido = (TextView)findViewById(R.id.recebido);
-        //totalRecebido.addTextChangedListener(MaskMoney.monetario(totalRecebido));
         totalRecebido.setText(String.valueOf(helper.somarRecebimento(cliente)));
+        totalRecebido.addTextChangedListener(MaskMoney.monetarioExibir(totalRecebido));
     }
 
     public void btnovoRecebimento(View v) {

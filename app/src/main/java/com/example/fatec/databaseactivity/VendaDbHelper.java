@@ -6,10 +6,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import com.example.fatec.databaseactivity.VendaRegister.VendaDb;
+
+import java.text.Format;
 import java.util.ArrayList;
 
 public class VendaDbHelper extends SQLiteOpenHelper{
-  public static final int DATABASE_VERSION = 1;
+  public static final int DATABASE_VERSION = 2;
   public static final String DATABASE_NAMEVEN = "Venda.db";
 
   private static final String CREATEVEN = "create table " + VendaDb.TABLE_NAME +" ( "
@@ -89,7 +91,7 @@ public class VendaDbHelper extends SQLiteOpenHelper{
 
     public double somarTodasVendas() {
         SQLiteDatabase db = this.getReadableDatabase();
-        double totalVendas=0.0;
+        double totalVendas= 0.0;
         Cursor cursorsomatotal = db.rawQuery("SELECT SUM(" + VendaDb.COLUMN_PRECOVENDA + ") total FROM "
                 + VendaRegister.VendaDb.TABLE_NAME, null);
         if (cursorsomatotal.moveToFirst()) {

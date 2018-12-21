@@ -11,6 +11,8 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class ViewVendaCliente extends Activity{
@@ -33,9 +35,9 @@ public class ViewVendaCliente extends Activity{
         recebimentoDbHelper = new RecebimentoDbHelper(getApplicationContext());
         spinnerCliente = (Spinner) findViewById(R.id.spinnerCliente);
         totalCompras = (TextView) findViewById(R.id.compras);
-        //totalCompras.addTextChangedListener(MaskMoney.monetarioTextView(totalCompras));
+        totalCompras.addTextChangedListener(MaskMoney.monetarioExibir(totalCompras));
         totalPagar = (TextView) findViewById(R.id.pagar);
-        //totalPagar.addTextChangedListener(MaskMoney.monetarioTextView(totalPagar));
+        totalPagar.addTextChangedListener(MaskMoney.monetarioExibir(totalPagar));
         loadSpinnerCliente();
 
     }
@@ -72,13 +74,13 @@ public class ViewVendaCliente extends Activity{
 
         listViewVendaCliente.setAdapter(ad);
 
-        //totalCompras = (TextView)findViewById(R.id.compras);
-        //totalCompras.addTextChangedListener(MaskMoney.monetarioTextView(totalCompras));
-        //totalCompras.setText(String.valueOf(helper.somarVendas(cliente)*10));
+        totalCompras = (TextView)findViewById(R.id.compras);
+        totalCompras.setText(String.valueOf(helper.somarVendas(cliente)/10));
+        totalCompras.addTextChangedListener(MaskMoney.monetarioExibir(totalCompras));
 
-        //totalPagar = (TextView)findViewById(R.id.pagar);
-        //totalPagar.addTextChangedListener(MaskMoney.monetarioTextView(totalPagar));
-        //totalPagar.setText(String.valueOf(helper.aPagar(cliente)*10-recebimentoDbHelper.somarRecebimento(cliente)*10));
+        totalPagar = (TextView)findViewById(R.id.pagar);
+        totalPagar.setText(String.valueOf(helper.aPagar(cliente)-recebimentoDbHelper.somarRecebimento(cliente)/10));
+        totalPagar.addTextChangedListener(MaskMoney.monetarioExibir(totalPagar));
     }
 
     public void btcadastrarrecebimento(View v) {

@@ -47,16 +47,16 @@
 
                 <TextView
                     android:id="@+id/produtoVendaCliente"
-                    android:layout_width="193dp"
+                    android:layout_width="265dp"
                     android:layout_height="20dp"
-                    android:ellipsize="marquee"
-                    android:maxLines="1"
-                    android:text="produto"
-                    android:textSize="15dp"
-                    android:textColor="#000000"
                     android:layout_alignParentBottom="true"
                     android:layout_toEndOf="@+id/textView9"
-                    android:gravity="center_vertical" />
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="produto"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -86,16 +86,16 @@
 
                 <TextView
                     android:id="@+id/dataVendaCliente"
-                    android:layout_width="81dp"
+                    android:layout_width="140dp"
                     android:layout_height="20dp"
-                    android:ellipsize="marquee"
-                    android:maxLines="1"
-                    android:text="data"
-                    android:textSize="15dp"
-                    android:textColor="#000000"
                     android:layout_alignParentBottom="true"
                     android:layout_toEndOf="@+id/dataVenda"
-                    android:gravity="center_vertical" />
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="data"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -124,16 +124,16 @@
 
                     <TextView
                         android:id="@+id/quantidadeVendaCliente"
-                        android:layout_width="match_parent"
+                        android:layout_width="47dp"
                         android:layout_height="20dp"
-                        android:ellipsize="marquee"
-                        android:maxLines="1"
-                        android:text="quantidade"
-                        android:textSize="15dp"
-                        android:textColor="#000000"
                         android:layout_alignParentBottom="true"
                         android:layout_toEndOf="@+id/quantidadeVenda"
-                        android:gravity="center_vertical" />
+                        android:ellipsize="marquee"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="quantidade"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
                 </LinearLayout>
             </LinearLayout>
 

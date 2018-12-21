@@ -32,7 +32,7 @@ public class ViewVenda extends Activity implements AdapterView.OnItemClickListen
         buscarDados();
         criarListagem();
         totalVendas = (TextView) findViewById(R.id.totalTodasVendas);
-        //totalVendas.addTextChangedListener(MaskMoney.monetario(totalVendas));
+        totalVendas.addTextChangedListener(MaskMoney.monetarioExibir(totalVendas));
     }
 
     private void buscarDados() {
@@ -56,7 +56,7 @@ public class ViewVenda extends Activity implements AdapterView.OnItemClickListen
         listViewVenda.setAdapter(ad);
 
         totalVendas = (TextView)findViewById(R.id.totalTodasVendas);
-        //totalVendas.addTextChangedListener(MaskMoney.monetarioTextView(totalVendas));
+        totalVendas.addTextChangedListener(MaskMoney.monetarioExibir(totalVendas));
         totalVendas.setText(String.valueOf(helper.somarTodasVendas()));
     }
 

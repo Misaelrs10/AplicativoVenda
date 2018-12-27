@@ -69,7 +69,6 @@ public class ViewRecebimento extends Activity{
 
         totalRecebido = (TextView)findViewById(R.id.recebido);
         totalRecebido.setText(String.valueOf(helper.somarRecebimento(cliente)));
-        totalRecebido.addTextChangedListener(MaskMoney.monetarioExibir(totalRecebido));
     }
 
     public void btnovoRecebimento(View v) {

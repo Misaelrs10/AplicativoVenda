@@ -37,7 +37,7 @@ public class EditarProduto extends Activity implements AdapterView.OnItemSelecte
         fornecedorProdutoAlterar = (Spinner) findViewById(R.id.fornecedorProdutoAlterar);
         loadSpinnerFornecedor();
         precoProdutoAlterar = (EditText) findViewById(R.id.precoProdutoAlterar);
-        precoProdutoAlterar.addTextChangedListener(MaskMoney.monetario(precoProdutoAlterar));
+        precoProdutoAlterar.addTextChangedListener(new MaskMoney.MascaraMonetaria(precoProdutoAlterar));
         bt_alterarProduto = (Button) findViewById(R.id.bt_alterarProduto);
 
         Intent intent = getIntent();

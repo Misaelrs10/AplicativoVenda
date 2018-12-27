@@ -32,7 +32,7 @@ public class NovoProduto extends Activity implements AdapterView.OnItemSelectedL
         spn_fornecedor = (Spinner) findViewById(R.id.spn_fornecedor);
         loadSpinnerFornecedor();
         preco = (EditText) findViewById(R.id.idPreco);
-        preco.addTextChangedListener(MaskMoney.monetario(preco));
+        preco.addTextChangedListener(new MaskMoney.MascaraMonetaria(preco));
 
     }
 

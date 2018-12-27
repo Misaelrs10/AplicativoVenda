@@ -36,7 +36,7 @@ public class NovaVenda extends Activity implements AdapterView.OnItemSelectedLis
         dataVenda = (EditText) findViewById(R.id.dataVenda);
         dataVenda.addTextChangedListener(Masks.mask(dataVenda, Masks.FORMAT_DATE));
         precoVenda = (EditText) findViewById(R.id.precoVenda);
-        precoVenda.addTextChangedListener(MaskMoney.monetario(precoVenda));
+        precoVenda.addTextChangedListener(new MaskMoney.MascaraMonetaria(precoVenda));
     }
 
     private void loadSpinnerCliente() {

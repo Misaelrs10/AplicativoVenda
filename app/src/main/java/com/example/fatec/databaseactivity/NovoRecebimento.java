@@ -3,6 +3,8 @@ package com.example.fatec.databaseactivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -10,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class NovoRecebimento extends Activity implements AdapterView.OnItemSelectedListener {
@@ -29,8 +32,9 @@ public class NovoRecebimento extends Activity implements AdapterView.OnItemSelec
 
         clienteRecebimento = (Spinner) findViewById(R.id.clienteRecebimento);
         loadSpinnerCliente();
+
         valRec = (EditText) findViewById(R.id.valor_recebimento);
-        valRec.addTextChangedListener(MaskMoney.monetario(valRec));
+        valRec.addTextChangedListener(new MaskMoney.MascaraMonetaria(valRec));
         dataRec = (EditText) findViewById(R.id.data_recebimento);
         dataRec.addTextChangedListener(Masks.mask(dataRec, Masks.FORMAT_DATE));
     }
